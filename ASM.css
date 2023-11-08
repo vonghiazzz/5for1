@@ -1,0 +1,106 @@
+#Logo{
+    font-family: 'Whisper', cursive;
+    font-size: 40px;
+    margin: 0;
+    color: rgba(225,225,225, .01);
+    background-image: url("./images/BG.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 20s ease-in-out infinite;  
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000;
+}
+
+
+@keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+}
+
+h1{
+  color: #fff;
+  line-height: 260px;
+}
+
+
+
+ 
+/* .hot{
+    height: 200px;
+    width: 100%;
+}  */
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+      background: #000;
+    }
+    .dropdown-item{
+      background:#000000;
+    }
+    /* .dropdown:hover .dropdown-menu {
+      display: flex;
+      background: #000;
+    } */
+
+    .hover {
+      position: relative;
+      /* width: 50%; */
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .image {
+      opacity: 1;
+      display: inline-block;
+      margin: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+ 
+    }
+
+    .hover:hover .image {
+      opacity: 0.3;
+    }
+
+    .hover:hover .middle {
+      opacity: 1;
+    }
+
+    .text {
+      background-color: #04AA6D;
+      color: rgb(201, 28, 28);
+      font-size: 16px;
+      padding: 16px 32px;
+    }
