@@ -63,7 +63,7 @@
           <h5 class="card-title text-dark" style="text-align: center; height:100px;">
             <p> <a href="detail.php?id=<?=$row['pID']?>" style="text-decoration: none;" class="text-dark"><b><?= $row['pName']?></b></a></p>
           </h5>
-            <h6 class="card-subtitle mb-2 text-muted bi bi-currency-dollar"> <?= $row['pPrice']?></h6>
+            <h6 class="card-subtitle mb-2 text-muted bi bi-currency-dollar"> <?= $row['pPrice']?> VND</h6>
           <!-- <a href="cart.``php" class="btn btn-dark">Add to Cart</a> -->
         </div>
    </div>

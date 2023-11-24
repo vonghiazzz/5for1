@@ -49,7 +49,7 @@
                         <?= $r['pName']?>
                       </h5>
                     </a>
-                    <h6 class="card-subtitle mb-2 text-muted bi bi-currency-dollar"><?= $r['pPrice']?></h6>
+                    <h6 class="card-subtitle mb-2 text-muted bi bi-currency-dollar"><?= $r['pPrice']?> VND</h6>
                     <!-- <a href="#" class="btn btn-primary">Add to Cart</a> -->
                   </div>
                 </div>
