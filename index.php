@@ -47,7 +47,7 @@
 <div class="grid pt-4 text-center" style="text-decoration: none; font-size:22px;">
   <p><b>Điểm du lịch hot trong tuần</b></p>
 </div>
-<div class="row d-inline-flex m-auto text-center">
+<div class="row ">
 <?php  
    $sql = "SELECT * FROM `product` ORDER by date DESC LIMIT 6";
    //1

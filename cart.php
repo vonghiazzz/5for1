@@ -1,4 +1,3 @@
-
 <?php
 include_once 'header.php';
 
@@ -56,7 +55,7 @@ if (isset($_SESSION['user_name'])) {
         ?>
         <tr>
             <td><?= $row['pName'] ?></td>
-            <td> <input id="form1" min="0" name="quantity" value="<?= $row['pCount'] ?>" type="number"
+            <td> <input id="form1" min="0" name="quantity" value="<?= $row['pCount'] ?>" type="number" readonly
                     class="form-control form-control-sm" /></td>
             <td>
                 <h6 class="mb-0"><?= $row['pCount'] ?> *<span class=" bi bi-currency-dollar"><?= $row['pPrice'] ?></span>
@@ -69,18 +68,16 @@ if (isset($_SESSION['user_name'])) {
         $sum = $sum + $total;
         $b = $b + $row['pCount'];
     }
-    $query1 = "INSERT INTO user_order(user_id, sum, date) VALUE(?,?,CURDATE())";
-    $stmt1 = $dblink->prepare($query1);
-    $stmt1->execute(array($_SESSION['userid'], $total));
+    // $query1 = "INSERT INTO user_order(user_id, sum, date) VALUE(?,?,CURDATE())";
+    // $stmt1 = $dblink->prepare($query1);
+    // $stmt1->execute(array($_SESSION['userid'], $total));
 
-    // Truy vấn để lấy mã đơn hàng vừa chèn
-    $sql = "SELECT MAX(oid) FROM user_order";
-    $re2 = $dblink->query($sql);
-    $re3 = $re2->fetch(PDO::FETCH_BOTH);
+    // // Truy vấn để lấy mã đơn hàng vừa chèn
+    // $sql = "SELECT MAX(oid) FROM user_order";
+    // $re2 = $dblink->query($sql);
+    // $re3 = $re2->fetch(PDO::FETCH_BOTH);
 
-    // Thực hiện chèn dữ liệu vào bảng order_detail
-   
-   
+    // Thực hiện chèn dữ liệu vào bảng order_detail      
 ?>
 
      </table>
@@ -98,12 +95,13 @@ if (isset($_SESSION['user_name'])) {
             </div>
             <div class="">
                 <div class="fas fa-long-arrow-alt-right me-2">
-                <button onclick="window.location.href='confirm.php?sum=<?php echo $sum; ?>'" type="button" class="btn btn-black" name="btnConfirm" id="btnConfirm">
+                <button onclick="window.location.href='confirm.php?sum=<?php echo $sum; ?>&id=<?= $p_ID?>'" type="button" class="btn btn-black" name="btnConfirm" id="btnConfirm">
                     Confirm
                 </button>
-                <?= $sum?>
+                <!-- <input type="submit" class="btn btn-dark shop-button"
+            name="btnConfirm" value="Confirm"> -->
                 </div>
-            </div>
+            </div>  
         </div>
     </form>
     </div>

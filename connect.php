@@ -6,10 +6,10 @@ class Connect{
     public $dbname;
 
     public function __construct(){
-        $this->server = "l6glqt8gsx37y4hs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-        $this->user = "chmwlqq0s98wj7ve";
-        $this->password = "hw3vo8vl03qnrjw6";
-        $this->dbname = "bn12mw0k1xjq2c6s";
+        $this->server = "uzb4o9e2oe257glt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+        $this->user = "qnbw5jjet9shcagy";
+        $this->password = "eifkih84bz2zcyvl";
+        $this->dbname = "la3t37o6uitnmweb";
     }
 
     function connectToMySQL():mysqli{

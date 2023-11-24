@@ -123,5 +123,10 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
+  <script src="./JS/bootstrap.min.js"></script>
+  <script src="./JS/jquery.min.js"></script>
+  <script src="./JS/slick.min.js"></script>
+  <script src="./JS/nouislider.min.js"></script>
+  <script src="./JS/jquery.zoom.min.js"></script>
+  <script src="./JS/main.js"></script>
 </body>
