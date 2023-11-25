@@ -96,7 +96,7 @@
                 $dblink = $c->connectToPDO();
 
                 // Kiểm tra xem email đã tồn tại trong CSDL chưa
-                $email = "<?=isset($email)? $email:""?>";
+                $email = $_POST['email'];
                 $sql_check = "SELECT COUNT(*) FROM `user` WHERE `email` = ?";
                 $result_check = $dblink->prepare($sql_check);
                 $result_check->execute([$email]);
