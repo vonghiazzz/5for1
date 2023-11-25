@@ -13,13 +13,13 @@
         <a href="https://www.facebook.com/profile.php?id=61552865386609&mibextid=LQQJ4d" class="me-4 link-secondary">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="" class="me-4 link-secondary">
+        <a href="https://twitter.com/LeFgw64547" class="me-4 link-secondary">
           <img src="./images/X.png" width="20px" height="30 px">
         </a>
-        <a href="" class="me-4 link-secondary">
+        <!-- <a href="" class="me-4 link-secondary">
           <img src="./images/zalo.png" width="20px" height="30px">
-        </a>
-        <a href="" class="me-4 link-secondary">
+        </a> -->
+        <a href="https://www.tiktok.com/@kieutlbyxc2/video/7305350928150924546?_r=1&_t=8heaEw0qW3j" class="me-4 link-secondary">
           <i class="bi bi-tiktok"></i>
         </a>       
         <a href="https://instagram.com/5for1_du_lich_thuc_te_ao?igshid=OGQ5ZDc2ODk2ZA==" class="me-4 link-secondary">
