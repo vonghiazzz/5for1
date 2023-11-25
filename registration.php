@@ -145,7 +145,7 @@
                     <label for="email" class="col-md-2 col-form-lable">Email:</label>
                     <div class="col-md-10">
                         <input type="text" name="email" id="email" required class="form-control"
-                            placeholder="Điền email" value="<?=isset($email)? $email:""?>">
+                            placeholder="Điền email" value="">
                         <!--id với for giống nhau để chuyển sang id được -->
                     </div>
                 </div>
