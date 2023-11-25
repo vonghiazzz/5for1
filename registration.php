@@ -108,9 +108,9 @@
                     $result = $dblink->prepare($sql);
                     $stm = $result->execute([$email, $fullname, $gender, $address, $pass, "user", $phone, $birth]);
                     if ($stm == true) {
-                        echo "You have created an account successfully!";
+                        echo "<div class='alert alert-success text-center'>You have created an account successfully!</div>";
                     } else {
-                        echo "Insertion failed!";
+                        echo "<div class='alert alert-danger text-center'>Insertion failed!</div>";
                     }
                 } else {
                     echo "<div class='alert alert-danger text-center'>Email has been used!</div>";
