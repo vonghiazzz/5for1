@@ -40,13 +40,13 @@ if (isset($_SESSION['user_name'])) {
     $rows = $stmt1->fetchAll(PDO::FETCH_BOTH);
 ?>
   <div class="container">
-    <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+    <h1 class="fw-bold mb-0 text-black">Giỏ hàng</h1>
     <h6 class="mb-0 text-muted"><?= $stmt1->rowCount() ?> item(s)</h6>
     <table class="table">
         <tr>
-            <th>Product Name</th>
-            <th>Quantity</th>
-            <th>Total</th>
+            <th>Tên du lịch</th>
+            <th>Số lượng</th>
+            <th>Chi phí</th>
             <th>Action</th>
         </tr>
     <?php
@@ -58,7 +58,7 @@ if (isset($_SESSION['user_name'])) {
             <td> <input id="form1" min="0" name="quantity" value="<?= $row['pCount'] ?>" type="number" readonly
                     class="form-control form-control-sm" /></td>
             <td>
-                <h6 class="mb-0"><?= $row['pCount'] ?> *<span class=" bi bi-currency-dollar"><?= $row['pPrice'] ?></span>
+                <h6 class="mb-0"><?= $row['pCount'] ?> *<?= $row['pPrice'] ?> VND
                 </h6>
             </td>
             <td><a href="cart.php?del_id=<?= $row['cart_id'] ?>" class="text-muted text-decoration-none">x</a></td>
@@ -84,19 +84,19 @@ if (isset($_SESSION['user_name'])) {
     <hr class="my-4">
     <form action="" method="get" class="needs-validation">
         <div class="col-md-12 d-flex justify-content-end ">
-            <p><b>Total: <?php echo $sum; ?><span class=" bi bi-currency-dollar"></span></b></p>
+            <p><b>TỔNG: <?php echo $sum; ?>VND</b></p>
         </div>
         <div class="container d-inline-flex justify-content-between">
             <div class="">
                 <div class="fas fa-long-arrow-alt-left me-2">
                     <button onclick="window.location.href='index.php'" type="button" class="btn btn-black">
-                        Back to Shop</button>
+                        QUAY LẠI</button>
                 </div>
             </div>
             <div class="">
                 <div class="fas fa-long-arrow-alt-right me-2">
                 <button onclick="window.location.href='confirm.php?sum=<?php echo $sum; ?>&id=<?= $p_ID?>'" type="button" class="btn btn-black" name="btnConfirm" id="btnConfirm">
-                    Confirm
+                    XÁC NHẬN
                 </button>
                 <!-- <input type="submit" class="btn btn-dark shop-button"
             name="btnConfirm" value="Confirm"> -->

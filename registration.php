@@ -108,12 +108,12 @@
                     $result = $dblink->prepare($sql);
                     $stm = $result->execute([$email, $fullname, $gender, $address, $pass, "user", $phone, $birth]);
                     if ($stm == true) {
-                        echo "<div class='alert alert-success text-center'>You have created an account successfully!</div>";
+                        echo "<div class='alert alert-success text-center'>Bạn đã đăng ký thành công!</div>";
                     } else {
-                        echo "<div class='alert alert-danger text-center'>Insertion failed!</div>";
+                        echo "<div class='alert alert-danger text-center'>Thêm tài khoản không thành công!</div>";
                     }
                 } else {
-                    echo "<div class='alert alert-danger text-center'>Email has been used!</div>";
+                    echo "<div class='alert alert-danger text-center'>Email đã tồn tại!</div>";
                 }
                 }
             }            

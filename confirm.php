@@ -133,16 +133,16 @@ if ($re4->rowCount() > 0):
 
 <!DOCTYPE html>
 <html>
-<head>
+<head>  
     <title>Order Confirmation</title>
     <!-- Thêm các thẻ meta, CSS, và JS cần thiết cho trang này -->
 </head>
 <body>
     <div class="container pb-5">
-        <h2>Bill:</h2>
+        <h2>Hóa đơn:</h2>
         <form action="" id="form1" name="form1" method="post" class="needs-validation">
             <div class="row pb-3">
-                <label for="txtID" class="col-md-2 col-form-lable">User ID(*):</label>
+                <label for="txtID" class="col-md-2 col-form-lable">ID Khách hàng(*):</label>
                 <div class="col-md-10">
                     <input type="text" name="txtID" id="txtID" readonly required class="form-control"
                         placeholder="Enter category ID" value="<?= $row['user_id']; ?>" readonly>
@@ -158,16 +158,16 @@ if ($re4->rowCount() > 0):
             </div> -->
 
             <div class="row pb-3">
-                <label for="txtDes" class="col-md-2 col-form-lable">Total(*):</label>
+                <label for="txtDes" class="col-md-2 col-form-lable">Tổng(*):</label>
                 <div class="col-md-10">
                     <input type="text" name="txtDes" id="txtDes" readonly required class="form-control"
-                        value="$<?= $total; ?>">
+                        value="<?= $total; ?>VND">
                 </div>
             </div>
 
             <div class="row pb-3 ms-auto">
                 <div class="">
-                    <button onclick="window.location.href='index.php'" class="btn btn-outline-primary" type="button">Ok</button>
+                    <button onclick="window.location.href='index.php'" class="btn btn-outline-primary" type="button">Quay lại trang chủ</button>
                 </div>
             </div>
         </form>
